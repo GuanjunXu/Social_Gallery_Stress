@@ -1,0 +1,41 @@
+[tests]
+#Gridview
+GalleryStress.GalleryStressTest.testSlideShowWithCine = 1
+GalleryStress.GalleryStressTest.testSlideShowWithDissolve = 1
+GalleryStress.GalleryStressTest.testSlideShowWithFlash = 1
+GalleryStress.GalleryStressTest.testSelectDeselectall = 1
+
+#Albumview
+GalleryStress.GalleryStressTest.testSwitchToCamera = 1
+GalleryStress.GalleryStressTest.testLaunchGallery = 1
+GalleryStress.GalleryStressTest.testSelectFliter = 1
+
+#Fullview
+GalleryStress.GalleryStressTest.testCropPicture = 1
+GalleryStress.GalleryStressTest.testCropPictureCancel = 1
+GalleryStress.GalleryStressTest.testAddEvent = 1
+GalleryStress.GalleryStressTest.testAddPlace = 1
+GalleryStress.GalleryStressTest.testTagOnePicture = 1
+GalleryStress.GalleryStressTest.testSetAsContact = 1
+GalleryStress.GalleryStressTest.testSetAsWallpaper = 1
+GalleryStress.GalleryStressTest.testViewpicture = 1
+GalleryStress.GalleryStressTest.testUPIcon = 1
+GalleryStress.GalleryStressTest.testSlidePicture = 1
+GalleryStress.GalleryStressTest.testdeleteOBO = 1
+GalleryStress.GalleryStressTest.testPlayPauseVideo = 1
+
+#............................................................................
+GalleryStress.GalleryStressTest.testLaunchGalleryFromMS = 1
+GalleryStress.GalleryStressTest.testLaunchGalleryFromMMS = 1
+GalleryStress.GalleryStressTest.testLaunchGalleryFromEmail = 1
+GalleryStress.GalleryStressTest.testLaunchGalleryFromContact = 1
+
+
+
+
+
+
+
+
+
+
