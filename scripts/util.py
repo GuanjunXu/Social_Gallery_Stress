@@ -75,7 +75,7 @@ class Util():
     def launchGallery(self):
         d.start_activity(component = ACTIVITY_NAME)
         #Confirm gallery launch successfully by the icon on left-top corner
-        assert d(text = 'Albums').wait.exists(timeout = 3000), 'Gallery launch failed'      
+        assert d(description = 'Switch to camera').wait.exists(timeout = 5000), 'Gallery launch failed in 5s'      
 
     def selectFilter(self,galleryfilter):
         d(resourceId = 'android:id/text1').click.wait() #Tap on the left top corner
@@ -141,12 +141,14 @@ class Util():
         if string.atoi(result) == 0:
             self._clearAllResource()
             commands.getoutput('adb push ' + sys.path[0] + 'resource/testalbum/ ' + '/sdcard/testalbum')
+            #print 'adb push ' + sys.path[0] + 'resource/testalbum/ ' + '/sdcard/testalbum'
             time.sleep(2)
         else:
             result1 = commands.getoutput('adb shell ls -l /sdcard/testalbum/test* | grep jpg | wc -l')
             if string.atoi(result1) != 40 :
                 self._clearAllResource()
                 commands.getoutput('adb push ' + sys.path[0] + 'resource/testalbum/ ' + '/sdcard/testalbum')
+                #print 'adb push ' + sys.path[0] + 'resource/testalbum/ ' + '/sdcard/testalbum'
         commands.getoutput('adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///sdcard/')
         
     def _pushResourcesVideo(self):
