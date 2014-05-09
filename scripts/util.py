@@ -278,7 +278,6 @@ class Util():
 
     #Add on May 6th
     def setMenuOptions(self,setoption = None):
-<<<<<<< HEAD
         '''
             This is only for that menu list could be touched by text items, usage:
 
@@ -286,17 +285,11 @@ class Util():
 
             *You may need inputing initial character as capital
         '''
-=======
->>>>>>> dd960d5dab94f11aba1741ceca599ed133660aae
-        d.press('menu')
+        d(description = 'More options').click.wait()
         d(text = setoption).click.wait()
         if d(text = 'Choose an action').wait.exists(timeout = 2000):
             d(text = 'com.intel.android.gallery3d').click.wait()
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> dd960d5dab94f11aba1741ceca599ed133660aae
     #Add on May 6th
     def deleteItem(self,deleteoption):
         '''
@@ -308,7 +301,4 @@ class Util():
         '''
         d(description = 'Delete').click.wait()
         d(text = deleteoption).click.wait()
-<<<<<<< HEAD
-=======
-        
->>>>>>> dd960d5dab94f11aba1741ceca599ed133660aae
+
